@@ -121,7 +121,7 @@ var projects = {
                 $(".project-entry:last").append(formattedImage);
             });
 
-        })
+        });
     }
 };
 
