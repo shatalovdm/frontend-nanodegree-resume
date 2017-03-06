@@ -96,13 +96,13 @@ var projects = {
             title: "Food tracker",
             dates: "4/16-6/16",
             description: "Project powered by web2py",
-            images: []
+            images: ["images/project1.jpg"]
         },
         {
             title: "Data Visualization",
             dates: "2/16-4/16",
             description: "My first steps in Data Science",
-            images: []
+            images: ["images/project2.jpg"]
         }
     ],
     display: function(){
@@ -163,11 +163,11 @@ var bio = {
         var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
-        $("#topContacts").append(formattedMobile);
-        $("#topContacts").append(formattedEmail);
-        $("#topContacts").append(formattedGithub);
-        $("#topContacts").append(formattedTwitter);
-        $("#topContacts").append(formattedLocation);    
+        $("#topContacts, #footerContacts").append(formattedMobile);
+        $("#topContacts, #footerContacts").append(formattedEmail);
+        $("#topContacts, #footerContacts").append(formattedGithub);
+        $("#topContacts, #footerContacts").append(formattedTwitter);
+        $("#topContacts, #footerContacts").append(formattedLocation);    
     }
 };
 
